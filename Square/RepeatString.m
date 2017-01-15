@@ -13,10 +13,26 @@
 
 @implementation RepeatString
 
--(int)minimalModify:(NSString *)text {
+- (int)minimalModify:(NSString *)text {
     
-    NSString *leftPart = [text substringWithRange:NSMakeRange(0, text.length/2)];
-    NSString *rightPart = [text substringFromIndex:text.length/2];
+    int result = (int)text.length;
+    
+    if ((int)text.length == 1) {
+        return 1;
+    }
+    
+    for (int i = (int)(text.length/2-1); i < (int)(text.length/2+1); i++)
+    {
+        result = MIN(result, [self calculateTransformations:[text substringWithRange:NSMakeRange(0, i)]
+                                                rightString:[text substringFromIndex:i]]);
+    }
+    return result;
+    
+}
+- (int) calculateTransformations: (NSString *)leftPart rightString:(NSString*)rightPart {
+    
+//    NSString *leftPart = [text substringWithRange:NSMakeRange(0, text.length/2)];
+//    NSString *rightPart = [text substringFromIndex:text.length/2];
     
     NSMutableArray *leftCharArray = [NSMutableArray array];
     for (int i = 0; i < [leftPart length]; i++) {
@@ -24,23 +40,23 @@
     }
     
     NSMutableArray *rightCharArray = [NSMutableArray array];
-    for (int i = 0; i < [leftPart length]; i++) {
+    for (int i = 0; i < [rightPart length]; i++) {
         [rightCharArray addObject:[NSString stringWithFormat:@"%C", [rightPart characterAtIndex:i]]];
     }
     
     int matrix [leftPart.length + 1][rightPart.length + 1];
     
-    for (int i = 0; i < leftPart.length + 1; i++) {
-        matrix[i][0] = i;
-    }
-    for (int i = 0; i < rightPart.length + 1; i++) {
-        matrix[0][i] = i;
-    }
-    
-    for (int i = 1; i < leftPart.length + 1; i++) {
-        for (int j = 1; j < rightPart.length + 1; j++)
-        {
-            if (leftCharArray[i - 1] == rightCharArray[j - 1])
+    for (int i = 0; i <= leftPart.length; i++)
+        for (int j = 0; j <= rightPart.length; j++)
+            if (i == 0)
+            {
+                matrix[i][j] = j;
+            }
+            else if (j == 0)
+            {
+                matrix[i][j] = i;
+            }
+            else if (leftCharArray[i - 1] == rightCharArray[j - 1])
             {
                 matrix[i][j] = matrix[i - 1][j - 1];
             }
@@ -48,11 +64,18 @@
             {
                 matrix[i][j] = MIN(matrix[i - 1][j], MIN(matrix[i][j - 1], matrix[i - 1][j - 1])) + 1;
             }
+
+    //Print
+    NSString *rez = @"";
+    for (int i = 0; i <= leftPart.length; i++) {
+        for (int j = 0; j <= rightPart.length; j++) {
+            rez = [NSString stringWithFormat:@"\n%@ %d",rez,matrix[i][j]];
         }
+        rez = [NSString stringWithFormat:@"%@\n",rez];
     }
+    NSLog(@"%@",rez);
+    
     return matrix[leftPart.length][rightPart.length];;
 }
-- (int) calculateTransformations: (NSString *)leftString rightString:(NSString*)rightString {
-    return 0;
-}
+
 @end
