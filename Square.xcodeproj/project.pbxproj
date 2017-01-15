@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772B251B1E2BE16A00471E6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B251A1E2BE16A00471E6F /* AppDelegate.m */; };
+		772B251E1E2BE16A00471E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B251D1E2BE16A00471E6F /* main.m */; };
+		772B25211E2BE16A00471E6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B25201E2BE16A00471E6F /* ViewController.m */; };
+		772B25231E2BE16A00471E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772B25221E2BE16A00471E6F /* Assets.xcassets */; };
+		772B25261E2BE16B00471E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B25241E2BE16B00471E6F /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		772B25161E2BE16A00471E6F /* Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Square.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		772B25191E2BE16A00471E6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		772B251A1E2BE16A00471E6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		772B251D1E2BE16A00471E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		772B251F1E2BE16A00471E6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		772B25201E2BE16A00471E6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		772B25221E2BE16A00471E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772B25251E2BE16B00471E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772B25271E2BE16B00471E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772B25131E2BE16A00471E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		772B250D1E2BE16A00471E6F = {
+			isa = PBXGroup;
+			children = (
+				772B25181E2BE16A00471E6F /* Square */,
+				772B25171E2BE16A00471E6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		772B25171E2BE16A00471E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				772B25161E2BE16A00471E6F /* Square.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		772B25181E2BE16A00471E6F /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				772B25191E2BE16A00471E6F /* AppDelegate.h */,
+				772B251A1E2BE16A00471E6F /* AppDelegate.m */,
+				772B251F1E2BE16A00471E6F /* ViewController.h */,
+				772B25201E2BE16A00471E6F /* ViewController.m */,
+				772B25221E2BE16A00471E6F /* Assets.xcassets */,
+				772B25241E2BE16B00471E6F /* Main.storyboard */,
+				772B25271E2BE16B00471E6F /* Info.plist */,
+				772B251C1E2BE16A00471E6F /* Supporting Files */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		772B251C1E2BE16A00471E6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				772B251D1E2BE16A00471E6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772B25151E2BE16A00471E6F /* Square */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772B252A1E2BE16B00471E6F /* Build configuration list for PBXNativeTarget "Square" */;
+			buildPhases = (
+				772B25121E2BE16A00471E6F /* Sources */,
+				772B25131E2BE16A00471E6F /* Frameworks */,
+				772B25141E2BE16A00471E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Square;
+			productName = Square;
+			productReference = 772B25161E2BE16A00471E6F /* Square.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		772B250E1E2BE16A00471E6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Egzon Arifi";
+				TargetAttributes = {
+					772B25151E2BE16A00471E6F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 772B25111E2BE16A00471E6F /* Build configuration list for PBXProject "Square" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 772B250D1E2BE16A00471E6F;
+			productRefGroup = 772B25171E2BE16A00471E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				772B25151E2BE16A00471E6F /* Square */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772B25141E2BE16A00471E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772B25231E2BE16A00471E6F /* Assets.xcassets in Resources */,
+				772B25261E2BE16B00471E6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		772B25121E2BE16A00471E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772B25211E2BE16A00471E6F /* ViewController.m in Sources */,
+				772B251E1E2BE16A00471E6F /* main.m in Sources */,
+				772B251B1E2BE16A00471E6F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		772B25241E2BE16B00471E6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772B25251E2BE16B00471E6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		772B25281E2BE16B00471E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		772B25291E2BE16B00471E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		772B252B1E2BE16B00471E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Square/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.egzonarifi.Square;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		772B252C1E2BE16B00471E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Square/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.egzonarifi.Square;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		772B25111E2BE16A00471E6F /* Build configuration list for PBXProject "Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B25281E2BE16B00471E6F /* Debug */,
+				772B25291E2BE16B00471E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772B252A1E2BE16B00471E6F /* Build configuration list for PBXNativeTarget "Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B252B1E2BE16B00471E6F /* Debug */,
+				772B252C1E2BE16B00471E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 772B250E1E2BE16A00471E6F /* Project object */;
+}
