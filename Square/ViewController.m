@@ -10,9 +10,11 @@
 #import "RepeatString.h"
 
 @interface ViewController()
+
 @property (weak) IBOutlet NSButton *calculateButton;
 @property (nonatomic) RepeatString *repeatString;
 @property (weak) IBOutlet NSTextField *inputTextField;
+
 @end
 
 @implementation ViewController
@@ -27,10 +29,16 @@
 }
 
 - (IBAction)calculateAction:(id)sender {
-    NSLog(@"Egzon");
-    int returnValue = [self.repeatString minimalModify:[self.inputTextField stringValue]];
     NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:[NSString stringWithFormat:@"Numri minimal i operacioneve per shendrimin e ketij teksti ne 'SQUARE' eshte \n => %d",returnValue]];
+    
+    if ([self.inputTextField stringValue].length == 0) {
+        [alert setMessageText:@"Teksti eshte i zbrazet"];
+    } else if ([self.inputTextField stringValue].length > 50) {
+        [alert setMessageText:@"Teksti eshte i limituar me 50 karaktere"];
+    } else {
+        int returnValue = [self.repeatString minimalModify:[self.inputTextField stringValue]];
+        [alert setMessageText:[NSString stringWithFormat:@"Numri minimal i operacioneve eshte: %d",returnValue]];
+    }
     [alert addButtonWithTitle:@"OK"];
     [alert runModal];
 }
