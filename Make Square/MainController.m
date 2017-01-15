@@ -24,6 +24,7 @@
 }
 
 - (IBAction)calculateAction:(id)sender {
+    self.terminalTextView.text = @"";
     [self.inputTextField resignFirstResponder];
     if (self.inputTextField.text.length == 0) {
         [self showMessage:@"Teksti eshte i zbrazet" withTitle:@"Gabim!"];
