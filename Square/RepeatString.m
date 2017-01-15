@@ -10,6 +10,7 @@
 #ifndef MIN
 #import <NSObjCRuntime.h>
 #endif
+
 @implementation RepeatString
 
 -(int)minimalModify:(NSString *)text {
@@ -50,5 +51,8 @@
         }
     }
     return matrix[leftPart.length][rightPart.length];;
+}
+- (int) calculateTransformations: (NSString *)leftString rightString:(NSString*)rightString {
+    return 0;
 }
 @end
