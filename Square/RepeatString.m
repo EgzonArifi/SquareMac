@@ -24,12 +24,14 @@
     for (int i = (int)(text.length/2-1); i < (int)(text.length/2+1); i++)
     {
         result = MIN(result, [self calculateTransformations:[text substringWithRange:NSMakeRange(0, i)]
-                                                rightString:[text substringFromIndex:i]]);
+                                                rightString:[text substringFromIndex:i] WithCompletion:^(NSString *transformations) {
+                                                    
+                                                }]);
     }
     return result;
     
 }
-- (int) calculateTransformations: (NSString *)leftPart rightString:(NSString*)rightPart {
+- (int) calculateTransformations: (NSString *)leftPart rightString:(NSString*)rightPart WithCompletion:(void (^)(NSString *transformations))completion {
     
 //    NSString *leftPart = [text substringWithRange:NSMakeRange(0, text.length/2)];
 //    NSString *rightPart = [text substringFromIndex:text.length/2];
@@ -69,13 +71,30 @@
     NSString *rez = @"";
     for (int i = 0; i <= leftPart.length; i++) {
         for (int j = 0; j <= rightPart.length; j++) {
-            rez = [NSString stringWithFormat:@"\n%@ %d",rez,matrix[i][j]];
+            rez = [NSString stringWithFormat:@"%@ %d",rez,matrix[i][j]];
         }
         rez = [NSString stringWithFormat:@"%@\n",rez];
     }
     NSLog(@"%@",rez);
-    
+    completion(rez);
     return matrix[leftPart.length][rightPart.length];;
 }
-
+- (void)minimalModify:(NSString *)text WithPrintCompletion:(void (^)(int minalOperations, NSString *transformations))completion {
+    int result = (int)text.length;
+    
+    if ((int)text.length == 1) {
+        completion(1,@"");
+    }
+    
+    __block NSString *printResult = nil;
+    for (int i = (int)(text.length/2-1); i < (int)(text.length/2+1); i++)
+    {
+        printResult = @"";
+        result = MIN(result, [self calculateTransformations:[text substringWithRange:NSMakeRange(0, i)]
+                                                rightString:[text substringFromIndex:i] WithCompletion:^(NSString *transformations) {
+                                                    printResult = transformations;
+                                                }]);
+    }
+    completion(result,printResult);
+}
 @end

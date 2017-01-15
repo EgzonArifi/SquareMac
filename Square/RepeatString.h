@@ -11,5 +11,5 @@
 @interface RepeatString : NSObject
 
 -(int)minimalModify:(NSString *)text;
-
+- (void)minimalModify:(NSString *)text WithPrintCompletion:(void (^)(int minalOperations, NSString *transformations))completion;
 @end

@@ -13,6 +13,13 @@
 		772B25231E2BE16A00471E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772B25221E2BE16A00471E6F /* Assets.xcassets */; };
 		772B25261E2BE16B00471E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B25241E2BE16B00471E6F /* Main.storyboard */; };
 		772B252F1E2BF2D100471E6F /* RepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B252E1E2BF2D100471E6F /* RepeatString.m */; };
+		772B25381E2C255700471E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B25371E2C255700471E6F /* main.m */; };
+		772B253B1E2C255700471E6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B253A1E2C255700471E6F /* AppDelegate.m */; };
+		772B253E1E2C255700471E6F /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B253D1E2C255700471E6F /* MainController.m */; };
+		772B25411E2C255700471E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B253F1E2C255700471E6F /* Main.storyboard */; };
+		772B25431E2C255700471E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772B25421E2C255700471E6F /* Assets.xcassets */; };
+		772B25461E2C255700471E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B25441E2C255700471E6F /* LaunchScreen.storyboard */; };
+		77E2A45B1E2C2B2800B71884 /* RepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 772B252E1E2BF2D100471E6F /* RepeatString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +32,29 @@
 		772B25221E2BE16A00471E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		772B25251E2BE16B00471E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		772B25271E2BE16B00471E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		772B252D1E2BF2D100471E6F /* RepeatString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatString.h; sourceTree = "<group>"; };
-		772B252E1E2BF2D100471E6F /* RepeatString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatString.m; sourceTree = "<group>"; };
+		772B252D1E2BF2D100471E6F /* RepeatString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepeatString.h; path = Square/RepeatString.h; sourceTree = "<group>"; };
+		772B252E1E2BF2D100471E6F /* RepeatString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RepeatString.m; path = Square/RepeatString.m; sourceTree = "<group>"; };
+		772B25341E2C255700471E6F /* Make Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Make Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772B25371E2C255700471E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		772B25391E2C255700471E6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		772B253A1E2C255700471E6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		772B253C1E2C255700471E6F /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		772B253D1E2C255700471E6F /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		772B25401E2C255700471E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772B25421E2C255700471E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772B25451E2C255700471E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		772B25471E2C255700471E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		772B25131E2BE16A00471E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772B25311E2C255700471E6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,7 +67,10 @@
 		772B250D1E2BE16A00471E6F = {
 			isa = PBXGroup;
 			children = (
+				772B252D1E2BF2D100471E6F /* RepeatString.h */,
+				772B252E1E2BF2D100471E6F /* RepeatString.m */,
 				772B25181E2BE16A00471E6F /* Square */,
+				772B25351E2C255700471E6F /* Make Square */,
 				772B25171E2BE16A00471E6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				772B25161E2BE16A00471E6F /* Square.app */,
+				772B25341E2C255700471E6F /* Make Square.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +89,6 @@
 			children = (
 				772B25191E2BE16A00471E6F /* AppDelegate.h */,
 				772B251A1E2BE16A00471E6F /* AppDelegate.m */,
-				772B252D1E2BF2D100471E6F /* RepeatString.h */,
-				772B252E1E2BF2D100471E6F /* RepeatString.m */,
 				772B251F1E2BE16A00471E6F /* ViewController.h */,
 				772B25201E2BE16A00471E6F /* ViewController.m */,
 				772B25221E2BE16A00471E6F /* Assets.xcassets */,
@@ -77,6 +103,30 @@
 			isa = PBXGroup;
 			children = (
 				772B251D1E2BE16A00471E6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		772B25351E2C255700471E6F /* Make Square */ = {
+			isa = PBXGroup;
+			children = (
+				772B25391E2C255700471E6F /* AppDelegate.h */,
+				772B253A1E2C255700471E6F /* AppDelegate.m */,
+				772B253C1E2C255700471E6F /* MainController.h */,
+				772B253D1E2C255700471E6F /* MainController.m */,
+				772B253F1E2C255700471E6F /* Main.storyboard */,
+				772B25421E2C255700471E6F /* Assets.xcassets */,
+				772B25441E2C255700471E6F /* LaunchScreen.storyboard */,
+				772B25471E2C255700471E6F /* Info.plist */,
+				772B25361E2C255700471E6F /* Supporting Files */,
+			);
+			path = "Make Square";
+			sourceTree = "<group>";
+		};
+		772B25361E2C255700471E6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				772B25371E2C255700471E6F /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -101,6 +151,23 @@
 			productReference = 772B25161E2BE16A00471E6F /* Square.app */;
 			productType = "com.apple.product-type.application";
 		};
+		772B25331E2C255700471E6F /* Make Square */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772B25481E2C255700471E6F /* Build configuration list for PBXNativeTarget "Make Square" */;
+			buildPhases = (
+				772B25301E2C255700471E6F /* Sources */,
+				772B25311E2C255700471E6F /* Frameworks */,
+				772B25321E2C255700471E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Make Square";
+			productName = "Make Square";
+			productReference = 772B25341E2C255700471E6F /* Make Square.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +178,9 @@
 				ORGANIZATIONNAME = "Egzon Arifi";
 				TargetAttributes = {
 					772B25151E2BE16A00471E6F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					772B25331E2C255700471E6F = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -129,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				772B25151E2BE16A00471E6F /* Square */,
+				772B25331E2C255700471E6F /* Make Square */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +211,16 @@
 			files = (
 				772B25231E2BE16A00471E6F /* Assets.xcassets in Resources */,
 				772B25261E2BE16B00471E6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772B25321E2C255700471E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772B25461E2C255700471E6F /* LaunchScreen.storyboard in Resources */,
+				772B25431E2C255700471E6F /* Assets.xcassets in Resources */,
+				772B25411E2C255700471E6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +238,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		772B25301E2C255700471E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E2A45B1E2C2B2800B71884 /* RepeatString.m in Sources */,
+				772B253E1E2C255700471E6F /* MainController.m in Sources */,
+				772B253B1E2C255700471E6F /* AppDelegate.m in Sources */,
+				772B25381E2C255700471E6F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -166,6 +258,22 @@
 				772B25251E2BE16B00471E6F /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		772B253F1E2C255700471E6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772B25401E2C255700471E6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		772B25441E2C255700471E6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772B25451E2C255700471E6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -276,6 +384,37 @@
 			};
 			name = Release;
 		};
+		772B25491E2C255700471E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Make Square/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egzonarifi.Make-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		772B254A1E2C255700471E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Make Square/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egzonarifi.Make-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -295,6 +434,16 @@
 				772B252C1E2BE16B00471E6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772B25481E2C255700471E6F /* Build configuration list for PBXNativeTarget "Make Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B25491E2C255700471E6F /* Debug */,
+				772B254A1E2C255700471E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
