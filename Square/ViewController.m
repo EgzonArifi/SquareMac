@@ -8,18 +8,27 @@
 
 #import "ViewController.h"
 
+@interface ViewController()
+@property (weak) IBOutlet NSButton *calculateButton;
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
 }
 
+- (IBAction)calculateAction:(id)sender {
+    NSLog(@"Egzon");
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"Numri minimal i operacioneve per shendrimin e ketij teksti ne 'SQUARE' eshte \n => 5"];
+    [alert addButtonWithTitle:@"OK"];
+    [alert runModal];
+}
 @end
