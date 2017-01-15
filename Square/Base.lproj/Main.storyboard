@@ -709,6 +709,7 @@
                     </view>
                     <connections>
                         <outlet property="calculateButton" destination="kwW-Cy-GH6" id="GdO-vv-tLe"/>
+                        <outlet property="inputTextField" destination="Yub-Xn-uk5" id="Jpp-bs-o74"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
